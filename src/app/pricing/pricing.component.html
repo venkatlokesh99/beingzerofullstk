@@ -1,1 +1,22 @@
-<p>pricing works!</p>
+<h1>count:{{count}}</h1>
+<div class="row">
+<div *ngFor="let usr of users">
+    <div class="card" style="width: 15rem; ">
+        <img class="card-img-top" src={{usr.avatar}} alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{usr.first_name}} {{usr.last_name}} </h5>
+         
+          <div class="card-text">
+              <div>
+            ID: {{usr.id}}
+        </div>
+        <div>
+            Email : {{usr.email}}
+        </div>
+          </div>
+          <a href="#" class="btn btn-primary">view Details</a>
+        </div>
+      </div>
+      </div>
+      
+    
